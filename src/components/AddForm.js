@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 const AddForm  = () => {
 
   const [contacts, setContacts] = useState(data);
-
   const [addFormData, setAddFormData] = useState({
     fullName: "",
     address: "",
@@ -17,14 +16,10 @@ const AddForm  = () => {
 
   const handleAddFormChange = (event) => {
     event.preventDefault();
-
     const fieldName = event.target.getAttribute("name");
-
     const fieldValue = event.target.value;
-
     const newFormData = { ...addFormData };
     newFormData[fieldName] = fieldValue;
-
     setAddFormData(newFormData);
   };
 
@@ -81,6 +76,5 @@ const AddForm  = () => {
         </form></center>
     );
   }
-
 
 export default AddForm;
