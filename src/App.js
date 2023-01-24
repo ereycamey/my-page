@@ -11,7 +11,7 @@ import Voters from './components/Voters';
 import Voted from './components/Voted'; 
 import ReadOnlyRow from "./components/ReadOnlyRow";
 import EditableRow from "./components/EditableRow";
-import AddForm from './components/AddForm';
+
 
 function App() {
   return (
@@ -25,7 +25,6 @@ function App() {
         <Route exact path="/voted" component={Voted} />
         <Route exact path="/editablerow" component={EditableRow} />
         <Route exact path="/readonlyrow" component={ReadOnlyRow} />
-        <Route exact path="/addform" component={AddForm} />
         <Redirect to="/" />
       </Switch>
     </Router>
