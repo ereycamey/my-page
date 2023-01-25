@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { FaLock, FaHome, FaList, FaUsers } from "react-icons/fa";
-import { MdGroups, MdPerson } from "react-icons/md";
 import "../Styles/main.css";
 import voting from './voting.png'
 import { __DATA__ } from "./data";
@@ -31,10 +30,6 @@ const NavBar = () => {
         <br></br>
         <div className="p1">&nbsp; &nbsp; &nbsp; &nbsp;<FaHome />  Overview</div>
         <br></br>
-        <center>
-        <Link to="voters"><button className="button1"><MdGroups />  Voters   &nbsp; &nbsp; &nbsp; &nbsp;     150</button></Link>
-        <Link to="voted"><button className="button1"><MdPerson />  Voted   &nbsp; &nbsp; &nbsp; &nbsp;     101</button></Link>
-        </center>
         <Container>
           <MainContainer>
             {__DATA__.map(({ distance, colors }, i) => {
