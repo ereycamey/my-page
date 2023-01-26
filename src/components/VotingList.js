@@ -33,10 +33,10 @@ const VotingList = () => {
       <div className="page">
         <header>
           <h3><img src={voting} height="40" width="40" style={{ position: 'relative' }} alt="login" /></h3>
-          <Link to="navbar"><button className="button"><FaHome />  Overview</button></Link>
+          <Link to="NavBar"><button className="button"><FaHome />  Overview</button></Link>
           <Link to="votinglist"><button className="button"><FaList />  Ballot</button></Link>
           <Link to="users"><button className="button"><FaUsers />  Voters</button></Link>
-          <Link to="/loginform"><button className="nav-btn">
+          <Link to="Loginform"><button className="nav-btn">
             <FaLock />
           </button>
           </Link>

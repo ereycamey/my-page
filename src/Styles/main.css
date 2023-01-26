@@ -123,6 +123,21 @@ header .nav-btn {
     
 }
 
+.button4{
+  cursor: pointer;
+  color: white;
+  background: blue;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  width: 350px;
+  height: 40px;
+  border-radius: 5px;
+  position: relative;
+
+  
+}
+
 .p1{
     color: rgb(5, 172, 238);
     font-size: xx-large;
@@ -366,6 +381,20 @@ input {
   justify-content: space-around;
 }
 
+small {
+  display: block;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 25px;
+}
+
+.field{
+  height: 5em;
+  width: 30em;
+}
 
 
 

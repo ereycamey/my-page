@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from "react";
 import NavBar from "./components/NavBar"
 import {
   BrowserRouter as Router, Switch,
@@ -12,13 +12,34 @@ import EditableRow from "./components/EditableRow";
 
 
 function App() {
+  const [loggedIn, setloggedIn] = useState(false);
+
+  function callbackFunction(childData) {
+    setloggedIn(childData);
+  }
+
   return (
     <Router>
       <Switch>
-        <Route exact path="/" component={LoginForm} />
-        <Route exact path="/navbar" component={NavBar} />
-        <Route path="/votinglist" component={VotingList} />
-        <Route path="/users" component={Users} />
+        <Route path="/NavBar">
+        {loggedIn ? <NavBar /> : <Redirect to="/" />}
+        </Route> 
+        <Route path="/VotingList">
+        {loggedIn ? <VotingList /> : <Redirect to="/" />}
+        </Route> 
+        <Route path="/Users">
+        {loggedIn ? <Users /> : <Redirect to="/" />}
+        </Route> 
+        <Route path="/LoginForm">
+        {loggedIn ? <LoginForm /> : <Redirect to="/" />}
+        </Route> 
+        <Route path="/">
+        {loggedIn ? (
+         <Redirect to="/NavBar" />
+        ) : (
+            <LoginForm parentCallback={callbackFunction} />
+          )}
+          </Route>
         <Route exact path="/editablerow" component={EditableRow} />
         <Route exact path="/readonlyrow" component={ReadOnlyRow} />
         <Redirect to="/" />

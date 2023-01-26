@@ -92,3 +92,23 @@ input {
     transform: scale(0);
 }
 
+.vote-btn {
+    border-radius:3px;
+    border:0;
+    background:rgb(3, 108, 150);
+    padding:20px;
+    font:bold 9px/1.2 arial;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:white;
+    box-shadow:0 1px 1px rgba(0,0,0,.2);
+    outline:none;
+    position:relative;
+    transition: all .3s ease-out; 
+    cursor:pointer;
+    overflow:hidden;
+    height: 5em;
+    width: 20em;
+    font-size: 11px;
+  }
+
