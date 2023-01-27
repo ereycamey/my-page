@@ -366,7 +366,7 @@ input {
   cursor:pointer;
   overflow:hidden;
   height: 5em;
-  width: 15em;
+  width: 20em;
 }
 
 .cover3 {
@@ -394,6 +394,15 @@ h1 {
 .field{
   height: 5em;
   width: 30em;
+}
+
+input {
+  border-color: blue;
+  height: 4em;
+  width: 20%;
+  border-radius: 0.25em;
+  text-align: left;
+  padding: 1em;
 }
 
 

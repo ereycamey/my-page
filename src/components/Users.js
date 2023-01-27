@@ -114,7 +114,7 @@ const Users = () => {
             <h3><img src={voting} height="40" width="40" style={{position: 'relative'}} alt="login"/></h3>
             <Link to="NavBar"><button className="button"><FaHome/>  Overview</button></Link>
             <Link to="votinglist"><button className="button"><FaList/>  Ballot</button></Link>
-            <Link to="users"><button className="button"><FaUsers/>  Voters</button></Link>
+            <Link to="users"><button className="button"><FaUsers/>  Candidates</button></Link>
             <Link to="LoginForm"><button className="nav-btn">
             <FaLock />
           </button>
@@ -122,7 +122,7 @@ const Users = () => {
         </header>
         <br></br>
         <br></br>
-        <div className="p1">&nbsp; &nbsp; &nbsp; &nbsp;<FaUsers />  Voters</div>
+        <div className="p1">&nbsp; &nbsp; &nbsp; &nbsp;<FaUsers />  Add Candidates</div>
         <br></br>
         <br></br>
       <center>
@@ -131,9 +131,9 @@ const Users = () => {
           <thead>
             <tr>
               <th>ID</th>
-              <th>Name</th>
-              <th>Address</th>
-              <th>Phone Number</th>
+              <th>Name of Candidates</th>
+              <th>Position</th>
+              <th>Age</th>
               <th>Email</th>
               <th>Actions</th>
             </tr>
@@ -193,7 +193,7 @@ const Users = () => {
         />
         <br></br>
         <br></br>
-        <button className="vote-btn1" type="submit">Add New User</button>
+        <button className="vote-btn1" type="submit">Add New Candidates</button>
       </form></div></center>
     </div>
 
